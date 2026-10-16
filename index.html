@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Management System</h1>
+    <p>Manage student records easily</p>
+  </header>
+
+  <main>
+    <section class="form-card">
+      <h2>Add Student</h2>
+      <form id="studentForm">
+        <input id="name" type="text" placeholder="Student name" required>
+        <input id="roll" type="text" placeholder="Roll number" required>
+        <input id="course" type="text" placeholder="Course" required>
+        <button type="submit">Add Student</button>
+      </form>
+    </section>
+
+    <section class="records">
+      <h2>Student Records</h2>
+      <p id="count">Total students: 0</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Roll Number</th>
+              <th>Course</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="studentList"></tbody>
+        </table>
+      </div>
+      <p id="emptyMessage">No student records yet.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
